@@ -1,70 +1,103 @@
 body{
-            margin: 0;
-            height: 800px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-            overflow: hidden;
-        }
-        .container{
-            font-size: 10px;
-            width: 400px;
-            height: 400px;
-            position: relative;
-        }
-        .sun{
-            position: absolute;
-            top: 150px;
-            left: 150px;
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            border-radius: 50%;
-            box-shadow: 0 0 30px white;
-        }
-        .earth, .moon{
-            position: absolute;
-            border-style: solid;
-            border-color: white transparent transparent transparent;
-            border-width: 1px 1px 0 0;
-            border-radius: 50%;
-        }
-        .earth{
-            top: 50px;
-            left: 50px;
-            width: 300px;
-            height: 300px;
-            animation: orbit 36.5s linear infinite;
-        }
-        .moon{
-            top: 0;
-            right: 0;
-            width:  80px;
-            height: 80px;
-            animation: orbit 2.7s linear infinite;
-        }
-        .earth::before, .moon::before{
-            content: '';
-            position: absolute;
-            border-radius: 50%;
-        }
-        .earth::before{
-            top: 28px;
-            right: 28px;
-            width: 30px;
-            height: 30px;
-            background-color: aqua;
-        }
-        .moon::before{
-            top: 8px;
-            right: 2px;
-            width: 12px;
-            height: 12px;
-            background-color: silver;
-        }
-        @keyframes orbit{
-            to{
-                transform: rotate(360deg);
-            }
-        }
+   background-color: hwb(0 79% 20% / 0.596);
+}
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 40% 10% 20% 10%;
+}
+header .logo img{
+    width: 60px;
+    height: 60px;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+header .search input{
+    margin-top: 15px;
+    width: 80%;
+    height: 30px;
+}
+header .search button{
+    height: 30px;
+    width: 30px;
+    margin-left: -5px;
+    border: none;
+    background-color: hsla(120, 100%, 25%, 0.425);
+    cursor: pointer;
+}
+header .account button{
+   border-radius: 50%;
+   margin-top: 15px;
+   height: 30px;
+   width: 30px;
+   background-color: hsla(120, 100%, 25%, 0.425); 
+   margin-left: 100px;
+   border: none;
+   cursor: pointer;
+}
+header .dangky button{
+    border-radius: 30px;
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 50px;
+    background-color: hsla(120, 100%, 25%, 0.425);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+header .cart button{
+    border-radius: 30px;
+    margin-top: 15px;
+    height: 30px;
+    width: 50px;
+    background-color: hsla(120, 100%, 25%, 0.425);
+    border: none;
+    cursor: pointer;
+ }
+ nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #008000a7;
+    height: 40px;
+ }
+ nav ul a{
+    list-style: none;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ .banner img{
+    width: 100%;
+    height: 400px;
+ }
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 98%;
+    display: block;
+}
+footer .footer{
+    text-align: center;
+    margin-top: 30px;
+}
+footer .mxh {
+    margin-left: 100px;
+    margin-top: 10px;
+    text-align: center;
+}
+footer .mxh i{
+    margin: 10px;
+}
+footer .lienhe{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aliceblue;
+}
+footer .lienhe .lienhe2 ul{
+    list-style: none;
+}
