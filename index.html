@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="title">Trung thu 2023</div>
-    <div class="container">
-         <div class="sun"></div>
-         <div class="earth"></div>
-         <div class="moon"></div>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="">
     </div>
-    <div classs="message">Chuc trung thu vui ve</div>
+    <div class="search">
+      <input type="search" id="search" placeholder="Tìm Kiếm">
+      <button><i class="fa-solid fa-magnifying-glass" style="color: #f5f5f5;"></i></button>
+    </div>
+    <div class="account">
+      <button onclick="account()">
+        <i class="fa-regular fa-user" style="color: #f5f5f5;"></i>
+      </button>
+    </div>
+    <div class="dangky"> 
+      <button onclick="dangky()">
+        Đăng ký Tư Vấn
+      </button>
+    </div>
+    <div class="cart">
+      <button>
+        <i class="fa-solid fa-cart-shopping" style="color: #f5f5f5;"></i>
+      </button>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <a href="home.html"><li>Trang Chủ</li></a>
+      <a href="dattour.html"><li>Đặt Tour</li></a>
+      <a href="thueleu.html"><li>Thuê Lều - COMBO</li></a>
+      <a href="lienhe.html"><li>Liên Hệ</li></a>
+      <a href="gioithieu.html"><li>Giới Thiệu</li></a>
+    </ul>
+  </nav>
+  <div class="banner">
+    <img src="img/banner1.jpg" alt="OG Camping">
+  </div>
+
+  <hr>
+  <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0224405327594!2d107.1603258748237!3d11.259759350093084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31748d964e7a1d39%3A0xc9a0e4bd93045427!2sRong%20Ch%C6%A1i%20Camping!5e0!3m2!1svi!2s!4v1697989746295!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<footer>
+  <div class="lienhe">
+  <div class="lienhe1">
+  <h2>Liên Hệ:</h2>
+  <ul>
+    <li>Địa chỉ: Rong Chơi Camping, Vĩnh Cửu, Đồng Nai</li>
+    <li>Email: OGCamping@gmail.com</li>
+    <li>Điện thoại: 0933330543</li></div>
+    <div class="lienhe2">
+      <h2>Tài Khoản:</h2>
+      <ul>
+        <li>Ngân Hàng MB Bank (Ngân Hàng Quân Đội)</li>
+        <li>STK:</li>
+        <li>Tên:</li>
+      </ul>
+    </div>
+    <div class="mxh">
+      <h2>Thông Tin Liên Hệ Khác:</h2>
+      <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #3a5a92;"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #141414;"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok fa-xl" style="color: #050505;"></i></a>
+    </div></div>
+    <hr>
+  <div class="footer">&copy OGCamping.com</div>
+</footer>
 </body>
 </html>
